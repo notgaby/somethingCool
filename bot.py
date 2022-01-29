@@ -1,11 +1,9 @@
 import tweepy
 
-# Authenticate to Twitter
-auth = tweepy.OAuthHandler("MKRxouO4qhfq5GcZiNypdypmS", #api key
-    "T9IsYM7iEdcuyjZTiC75mQB2286JhcibhJByc5zmy8HXw3QQju")
-auth.set_access_token("1484434372061188096-Ks4WzWGHgjOfupsfXCAfSSXy1QO6rk", 
-    "GVjVhNtYRi1bpUSqCcL5QOg2pcRz9tI09YHlmC9U3P6k8")
-
-api = tweepy.API(auth)
-
-api.verify_credentials()
+client = tweepy.Client(consumer_key="3Bh4BzDfe40ciAKHIvwx5Pehe",
+                    consumer_secret="sIEZlTUeQLxACnsiOrp4rsh8kD1uEFoph7WI27kUmOAj6mQEoV",
+                    access_token="1484434372061188096-lU0VPJyP2FSajDfbiwqt8TYvJdSCYA",
+                    access_token_secret="zQX3w6LfUbpSHn0X8VH6ilyZg4ZRkEws6KCtjC7reJDi3")
+                    
+# Replace the text with whatever you want to Tweet about
+response = client.create_tweet(text='hello world')
