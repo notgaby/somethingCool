@@ -1,0 +1,1 @@
+https://realpython.com/twitter-bot-python-tweepy/#creating-twitter-api-authentication-credentials
