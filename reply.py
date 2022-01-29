@@ -1,10 +1,8 @@
 import tweepy
 
-#Search tweets that @ the account
+#Search tweets that @ the account and have #activitiesjsc2022
 def searchTweets(client):
-  #tweetedAt = client.get_user_mentions('hellospace101', tweet_fields=['context_annotations', 'created_at'], max_results=100)
-  #tweetedAt = tweepy.Client.get_user_mentions('hellospace101', tweet_fields=['context_annotations', 'created_at'], max_results=100)
-  query = 'from:suhemparack -is:retweet'
+  query = '@hellospace101 #activitiesjsc2022 -is:retweet'  #Don't include retweets
 
   tweets = client.search_recent_tweets(query=query, tweet_fields=['context_annotations', 'created_at'], max_results=10)
   print(tweets)

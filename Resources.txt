@@ -10,6 +10,7 @@ https://www.analyticsvidhya.com/blog/2021/12/creating-chatbot-building-using-pyt
 	-Tweet one thing from the data set
 	-Tweet random tweets
 	-Set up to take commands
+    - activities
 3: Tweet random space facts
 	-Find data set on space facts
 	-Tweet 3 times a day?
