@@ -13,4 +13,6 @@ def replyTweets(client):
     client.create_tweet(text = status, in_reply_to_tweet_id = tweet.id)
     sleep(10) 
 
+#Get random activity to add to tweet
+
 #Stretch: reply to tweet based on command (similar to discord bot)
