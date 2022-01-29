@@ -1,11 +1,11 @@
 https://realpython.com/twitter-bot-python-tweepy/#creating-twitter-api-authentication-credentials
 https://www.analyticsvidhya.com/blog/2021/12/creating-chatbot-building-using-python/
 
-1: Build the bot
-	-Make twitter account
-	-Make twitter devloper account
-	-OAuth
-	-Make it tweet Hello World
+1: Build the bot done
+	-Make twitter account done
+	-Make twitter devloper account done
+	-OAuth done
+	-Make it tweet Hello World done
 2: Use data set
 	-Tweet one thing from the data set
 	-Tweet random tweets
