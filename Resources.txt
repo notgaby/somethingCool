@@ -1,1 +1,15 @@
 https://realpython.com/twitter-bot-python-tweepy/#creating-twitter-api-authentication-credentials
+
+1: Build the bot
+	-Make twitter account
+	-Make twitter devloper account
+	-OAuth
+	-Make it tweet Hello World
+2: Use data set
+	-Tweet one thing from the data set
+	-Tweet random tweets
+	-Set up to take commands
+3: Tweet random space facts
+	-Find data set on space facts
+	-Tweet 3 times a day?
+4: Something to connect with Houston?
