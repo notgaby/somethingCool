@@ -8,4 +8,4 @@ client = tweepy.Client(consumer_key = consumer_key,
                     access_token_secret = access_token_secret)
                     
 # Replace the text with whatever you want to Tweet about
-response = client.create_tweet(text='hello world3')
+response = client.create_tweet(text='bing bong3')
