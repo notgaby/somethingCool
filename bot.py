@@ -13,5 +13,12 @@ client = tweepy.Client(consumer_key = consumer_key,
 # Replace the text with whatever you want to Tweet about
 #response = client.create_tweet(text='bing bong3')
 ####Replying
-replyTweets(client)
 
+def run():
+  while True:
+    replyTweets(client)
+    sleep(5)
+
+
+if __name__ == '__main__':
+  run()
