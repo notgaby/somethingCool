@@ -1,5 +1,6 @@
 import random as r
 import pandas as pd
+import os
 
 def createNewTweet(spaceFacts):
 
@@ -36,14 +37,26 @@ def createNewTweet(spaceFacts):
             " space walk!"
 
         return infoStr
+
     else:
-        print("bing bong")
         ranFact = r.randint(0,colSize)
         fact = col.iat[ranFact,0]
 
         return fact
+    
+def chooseDataSet():
+    count = 0
+    filePaths = []
 
+    for path in os.listdir('datasets'):
+        if os.path.isfile(os.path.join('datasets',path)):
+            filePaths.append('datasets/' + path)
+            count += 1
 
+    randSet = r.randint(0,count-1)
+    luckyDataset = filePaths[randSet]
 
-#createNewTweet()
-#def chooseDataSet():
+    createNewTweet(luckyDataset)
+
+print(chooseDataSet())
+
