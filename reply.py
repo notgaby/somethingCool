@@ -42,7 +42,7 @@ def getActivity():
   #Get number of entries
   
   numEntries = len(df.index)
-  print("numEntries: " + numEntries)
+  print("numEntries: " + str(numEntries) + df.iloc[0])
   randomEntry = random.randint(0, numEntries) #create a list from [0, numEntries] and choose a random number
 
   #print("NUMMM: " + str(randomEntry))
