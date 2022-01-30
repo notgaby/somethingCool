@@ -40,8 +40,9 @@ def getActivity():
   df = pd.read_csv('activities.csv')
 
   #Get number of entries
-  print("numEntries: " + numEntries)
+  
   numEntries = len(df.index)
+  print("numEntries: " + numEntries)
   randomEntry = random.randint(0, numEntries) #create a list from [0, numEntries] and choose a random number
 
   #print("NUMMM: " + str(randomEntry))
