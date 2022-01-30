@@ -48,9 +48,13 @@ def getActivity():
 
   #Generate random to avoid same tweet being executed twice
   uniqueId = ''.join([random.choice(string.ascii_letters
-            + string.digits) for n in range(5)])
+            + string.digits) for n in range(2)])
 
-  status = df.iloc[randomEntry].Title + '\n' + df.iloc[randomEntry].Description + '\n' + df.iloc[randomEntry].URL + uniqueId
+  print("UNIW: " + uniqueId)
+
+  status = df.iloc[randomEntry].Title + ' ' + uniqueId + '\n' + df.iloc[randomEntry].Description + '\n' + df.iloc[randomEntry].URL 
+
+  print(str(status) + '\n')
 
   return status
  
