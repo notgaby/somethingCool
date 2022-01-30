@@ -1,6 +1,6 @@
 import tweepy
 from time import sleep
-from config import consumer_key, consumer_secret, access_token, access_token_secret, bearer_token
+#from config import consumer_key, consumer_secret, access_token, access_token_secret, bearer_token
 from reply import replyTweets, getActivity
 
 client = tweepy.Client(consumer_key = consumer_key,
