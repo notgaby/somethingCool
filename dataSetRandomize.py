@@ -43,7 +43,7 @@ def createNewTweet(spaceFacts):
         fact = col.iat[ranFact,0]
 
         return fact
-    
+
 def chooseDataSet():
     count = 0
     filePaths = []
@@ -57,6 +57,4 @@ def chooseDataSet():
     luckyDataset = filePaths[randSet]
 
     createNewTweet(luckyDataset)
-
-print(chooseDataSet())
 
