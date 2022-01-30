@@ -37,7 +37,7 @@ def getActivity():
   #Get number of entries
   
   numEntries = len(df.index)
-  print("numEntries: " + str(numEntries) + df.iloc[0])
+
   randomEntry = random.randint(0, numEntries) #create a list from [0, numEntries] and choose a random number
 
   #Create a tweet from the random index corresponding to csv row
