@@ -13,7 +13,6 @@ def replyTweets(client):
     #check if already replied
     with open('lastTweet.txt') as f:
       if str(tweet.id) in f.read():
-        print("SKIP")
         continue
     
     authorId = tweet.author_id  #get id of person who tweeted
@@ -26,14 +25,10 @@ def replyTweets(client):
 
     
     status = '@' + str(userName) + '\n' + getActivity() #Tweet that the bot will produce
-    #print("TWEETING NEW: " + status)
     client.create_tweet(text = status, in_reply_to_tweet_id = tweet.id) 
 
-
-
-    sleep(5) 
+    sleep(10) 
   
-  #print('finished')
 
 #Get random activity to add to tweet
 def getActivity():
@@ -45,18 +40,13 @@ def getActivity():
   print("numEntries: " + str(numEntries) + df.iloc[0])
   randomEntry = random.randint(0, numEntries) #create a list from [0, numEntries] and choose a random number
 
-  #print("NUMMM: " + str(randomEntry))
   #Create a tweet from the random index corresponding to csv row
 
   #Generate random to avoid same tweet being executed twice
   uniqueId = ''.join([random.choice(string.ascii_letters
             + string.digits) for n in range(2)])
 
-  print("UNIW: " + uniqueId)
-
   status = df.iloc[randomEntry].Title + ' ' + uniqueId + '\n' + df.iloc[randomEntry].Description + '\n' + df.iloc[randomEntry].URL 
-
-  print(str(status) + '\n')
 
   return status
  
