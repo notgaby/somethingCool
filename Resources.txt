@@ -6,13 +6,14 @@ https://www.analyticsvidhya.com/blog/2021/12/creating-chatbot-building-using-pyt
 	-Make twitter devloper account done
 	-OAuth done
 	-Make it tweet Hello World done
-2: Use data set
-	-Tweet one thing from the data set
-	-Tweet random tweets
-	-Set up to take commands
-    - activities
-3: Tweet random space facts
+2: Use data set done
+	-Tweet one thing from the data set done
+	-Tweet random tweets done
+	-Set up to take commands ?
+    - activities done
+3: Tweet random space facts done
 	-Find data set on space facts done
-	-Tweet 3 times a day?
+	-Tweet 3 times a day ?
+3.5: delopy da bot
 4: Something to connect with Houston?
-5: Webscarp NASA events at space center houston
+5: Webscarp NASA events at space center houston?
