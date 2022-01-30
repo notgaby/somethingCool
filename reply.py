@@ -13,7 +13,7 @@ def replyTweets(client):
     #check if already replied
     with open('lastTweet.txt') as f:
       if str(tweet.id) in f.read():
-       # print("SKIP")
+        print("SKIP")
         continue
     
     authorId = tweet.author_id  #get id of person who tweeted
@@ -40,6 +40,7 @@ def getActivity():
   df = pd.read_csv('activities.csv')
 
   #Get number of entries
+  print("numEntries: " + numEntries)
   numEntries = len(df.index)
   randomEntry = random.randint(0, numEntries) #create a list from [0, numEntries] and choose a random number
 
